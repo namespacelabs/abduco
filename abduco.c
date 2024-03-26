@@ -619,7 +619,7 @@ int main(int argc, char *argv[]) {
 	server.name = basename(argv[0]);
 	gethostname(server.host+1, sizeof(server.host) - 1);
 
-	while ((opt = getopt(argc, argv, "aAclne:fpqrvL:")) != -1) {
+	while ((opt = getopt(argc, argv, "aAclne:fpqrvsL:")) != -1) {
 		switch (opt) {
 		case 'a':
 		case 'A':
